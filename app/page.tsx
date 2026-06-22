@@ -5,6 +5,7 @@ import AreaLocator from '@/components/area-locator'
 import HowItWorks from '@/components/how-it-works'
 import WhyChoose from '@/components/why-choose'
 import CTA from '@/components/cta'
+import AreasGrid from '@/components/areas-grid'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <Services />
         <AreaLocator />
+        <AreasGrid />
         <HowItWorks />
         <WhyChoose />
         <CTA />
