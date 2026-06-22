@@ -10,8 +10,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'DSM Gold Buyers | Sell Gold in Bangalore | Best Gold Rates',
+  description: 'Sell gold, release pledged gold, or buy gold in Bangalore with transparent pricing and instant payments. 35+ branches across Bangalore offering fair market rates and complete transparency.',
+  keywords: 'gold buyers Bangalore, sell gold, pledged gold release, gold loan, best gold rates',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -30,14 +31,16 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
+  openGraph: {
+    title: 'DSM Gold Buyers | Trusted Gold Buyer in Bangalore',
+    description: 'Sell your gold at the best market rates with transparent process and instant payment. 35+ branches across Bangalore.',
+    type: 'website',
+  },
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'dark',
+  themeColor: '#d4a574',
 }
 
 export default function RootLayout({
@@ -46,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="font-sans antialiased">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} bg-background`}>
+      <body className="font-sans antialiased bg-background text-foreground">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
