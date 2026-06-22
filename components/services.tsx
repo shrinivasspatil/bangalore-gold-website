@@ -49,12 +49,12 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/30">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-orange-500/5 to-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Our Services</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Complete gold solutions for every need—whether you&apos;re selling, releasing pledged gold, or investing
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight">Our Services</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+            Complete gold solutions for every need—whether you&apos;re selling, investing, or releasing pledged gold
           </p>
         </div>
 
@@ -62,15 +62,15 @@ export default function Services() {
           {services.map((service, idx) => {
             const Icon = service.icon
             return (
-              <Card key={idx} className="overflow-hidden hover:border-2 transition-all group bg-gradient-to-br from-card to-card/50 border-2 hover:shadow-2xl hover:shadow-orange-500/20 flex flex-col h-full">
+              <Card key={idx} className="overflow-hidden transition-all group bg-gradient-to-br from-card/50 to-card/20 border border-orange-500/10 hover:border-orange-500/30 hover:shadow-2xl hover:shadow-orange-500/20 flex flex-col h-full rounded-2xl">
                 {/* Image */}
-                <div className="relative h-48 overflow-hidden bg-accent/50 group-hover:scale-105 transition-transform duration-300">
+                <div className="relative h-56 overflow-hidden bg-accent/50 group-hover:scale-110 transition-transform duration-500">
                   <img 
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
                 {/* Content */}

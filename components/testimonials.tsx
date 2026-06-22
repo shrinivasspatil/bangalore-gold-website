@@ -23,20 +23,20 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-orange-500/3 to-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
             Loved by <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">Customers</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Read what our satisfied customers across Bangalore have to say
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+            Read what our satisfied customers across Bangalore have to say about DSM Gold Buyers
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, idx) => (
-            <Card key={idx} className="p-8 bg-gradient-to-br from-card to-accent/20 border border-accent/50 hover:border-primary/30 transition-all hover:shadow-lg hover:shadow-orange-500/10">
+            <Card key={idx} className="p-8 bg-gradient-to-br from-card/50 to-card/20 border border-orange-500/10 hover:border-orange-500/30 transition-all hover:shadow-xl hover:shadow-orange-500/15 rounded-2xl group">
               <div className="mb-6">
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (

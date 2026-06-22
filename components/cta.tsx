@@ -5,39 +5,39 @@ import { Button } from '@/components/ui/button'
 
 export default function CTA() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-accent/30">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-orange-500/5 to-background">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-gradient-to-br from-primary/20 via-accent to-background rounded-3xl p-12 md:p-16 border border-primary/30 overflow-hidden relative">
+        <div className="bg-gradient-to-br from-orange-600/40 via-orange-500/30 to-yellow-600/20 rounded-3xl p-12 md:p-16 border border-orange-500/40 overflow-hidden relative shadow-2xl shadow-orange-500/20">
           {/* Background accents */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/30 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-500/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
 
           <div className="relative z-10 max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
               Ready to Turn Your Gold Into Cash?
             </h2>
             
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg text-gray-200 leading-relaxed font-medium">
               Join thousands of satisfied customers who have experienced fair valuations, transparent processes, and instant payments at DSM Gold Buyers.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 pt-8">
               {/* Contact option 1 */}
-              <div className="bg-card/50 backdrop-blur border border-accent rounded-2xl p-6 hover:border-primary/50 transition-all">
-                <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
-                <h4 className="font-bold mb-2">Call Us Now</h4>
-                <p className="text-sm text-muted-foreground mb-4">Speak with our gold experts</p>
-                <a href="tel:+919876543210" className="text-primary font-semibold flex items-center justify-center gap-2 hover:gap-3 transition-all">
+              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:border-white/40 transition-all group">
+                <Phone className="w-10 h-10 text-yellow-300 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <h4 className="font-bold mb-2 text-lg text-white">Call Us Now</h4>
+                <p className="text-sm text-gray-200 mb-4">Speak with our gold experts</p>
+                <a href="tel:+919876543210" className="text-yellow-300 font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all">
                   +91 9876 543 210 <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
 
               {/* Contact option 2 */}
-              <div className="bg-card/50 backdrop-blur border border-accent rounded-2xl p-6 hover:border-primary/50 transition-all">
-                <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
-                <h4 className="font-bold mb-2">Visit Our Branch</h4>
-                <p className="text-sm text-muted-foreground mb-4">Walk-in with your gold anytime</p>
-                <button className="text-primary font-semibold flex items-center justify-center gap-2 hover:gap-3 transition-all mx-auto">
+              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:border-white/40 transition-all group">
+                <MapPin className="w-10 h-10 text-yellow-300 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <h4 className="font-bold mb-2 text-lg text-white">Visit Our Branch</h4>
+                <p className="text-sm text-gray-200 mb-4">Walk-in with your gold anytime</p>
+                <button className="text-yellow-300 font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all mx-auto">
                   Find Branch <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
@@ -50,11 +50,11 @@ export default function CTA() {
                   <span className="hidden sm:flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-primary" /> Closed on Sundays</span>
                 </div>
                 
-                <div className="flex flex-wrap justify-center gap-3">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg">
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Button size="lg" className="bg-white hover:bg-gray-100 text-orange-600 font-bold rounded-xl shadow-lg shadow-white/20 h-14 px-8 transition-all hover:scale-105">
                     Sell Gold Now
                   </Button>
-                  <Button size="lg" variant="outline" className="border-primary/30 hover:bg-accent/50 rounded-lg">
+                  <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white border border-white/30 font-bold rounded-xl h-14 px-8 transition-all backdrop-blur-sm">
                     Book Appointment
                   </Button>
                 </div>

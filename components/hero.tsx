@@ -18,27 +18,28 @@ export default function Hero() {
           {/* Left content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/30 bg-primary/5">
-                <span className="text-sm font-medium text-primary">✨ Bangalore&apos;s Trusted Gold Buyer</span>
+              <div className="inline-flex items-center px-4 py-2.5 rounded-full border border-orange-500/30 bg-gradient-to-r from-orange-500/10 to-red-500/10 backdrop-blur-sm">
+                <span className="text-sm font-semibold bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">⭐ Bangalore&apos;s Most Trusted Gold Buyer</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance">
-                Transform Your Gold Into
-                <span className="block bg-gradient-to-r from-orange-400 via-yellow-400 to-red-400 bg-clip-text text-transparent mt-2">Instant Cash</span>
+              <h1 className="text-6xl md:text-7xl lg:text-7xl font-bold tracking-tight text-balance leading-tight">
+                Transform Your Gold
+                <br />
+                <span className="bg-gradient-to-r from-orange-400 via-yellow-300 to-red-400 bg-clip-text text-transparent">Into Instant Cash</span>
               </h1>
 
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                Sell gold, release pledged gold, or buy gold with transparent pricing, instant payments, and 35+ branches across Bangalore. We&apos;re here to serve you with complete integrity and fair valuations.
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-xl font-medium">
+                Experience transparent gold buying with fair market rates, instant payments, and professional service across 35+ Bangalore branches.
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-lg font-semibold shadow-lg shadow-orange-500/50">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              <Button size="lg" className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-bold shadow-xl shadow-orange-500/40 hover:shadow-orange-500/60 transition-all scale-100 hover:scale-105 h-14 text-base">
                 Sell Gold Now
               </Button>
-              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white rounded-lg font-semibold shadow-lg shadow-cyan-500/50">
-                Find Branch
+              <Button size="lg" className="bg-slate-700 hover:bg-slate-800 text-white rounded-xl font-bold border border-slate-600 hover:border-slate-500 h-14 text-base transition-all">
+                Find Your Branch
               </Button>
             </div>
 
