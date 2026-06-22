@@ -8,8 +8,9 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center pt-20 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background gradient accent */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-orange-500/20 via-red-500/10 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-yellow-500/20 via-orange-500/10 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
+        <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan-500/10 via-transparent to-purple-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       </div>
 
       <div className="max-w-7xl mx-auto w-full">
@@ -23,7 +24,7 @@ export default function Hero() {
 
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance">
                 Transform Your Gold Into
-                <span className="block text-primary mt-2">Instant Cash</span>
+                <span className="block bg-gradient-to-r from-orange-400 via-yellow-400 to-red-400 bg-clip-text text-transparent mt-2">Instant Cash</span>
               </h1>
 
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
@@ -33,27 +34,27 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold">
+              <Button size="lg" className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-lg font-semibold shadow-lg shadow-orange-500/50">
                 Sell Gold Now
               </Button>
-              <Button size="lg" variant="outline" className="border-primary/30 hover:bg-accent rounded-lg font-semibold">
+              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white rounded-lg font-semibold shadow-lg shadow-cyan-500/50">
                 Find Branch
               </Button>
             </div>
 
             {/* Quick stats */}
-            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-accent">
-              <div>
-                <div className="text-2xl font-bold text-primary">35+</div>
-                <p className="text-sm text-muted-foreground">Branches in Bangalore</p>
+            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-accent/30">
+              <div className="space-y-2">
+                <div className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">35+</div>
+                <p className="text-sm text-muted-foreground">Branches</p>
               </div>
-              <div>
-                <div className="text-2xl font-bold text-primary">Fair</div>
-                <p className="text-sm text-muted-foreground">Market Rates</p>
+              <div className="space-y-2">
+                <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Fair</div>
+                <p className="text-sm text-muted-foreground">Rates</p>
               </div>
-              <div>
-                <div className="text-2xl font-bold text-primary">Instant</div>
-                <p className="text-sm text-muted-foreground">Payment</p>
+              <div className="space-y-2">
+                <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Instant</div>
+                <p className="text-sm text-muted-foreground">Payments</p>
               </div>
             </div>
           </div>
