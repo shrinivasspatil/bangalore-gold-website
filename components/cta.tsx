@@ -73,27 +73,27 @@ export default function CTA() {
             <div>
               <h5 className="font-bold mb-4 text-sm">Services</h5>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Sell Gold</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Release Pledged Gold</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Buy Gold</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Gold Loan</a></li>
+                <li><a href="/#sell-gold" className="hover:text-primary transition-colors">Sell Gold</a></li>
+                <li><a href="/#release-pledge" className="hover:text-primary transition-colors">Release Pledged Gold</a></li>
+                <li><a href="/#buy-gold" className="hover:text-primary transition-colors">Buy Gold</a></li>
+                <li><a href="/#gold-loan" className="hover:text-primary transition-colors">Gold Loan</a></li>
               </ul>
             </div>
             <div>
               <h5 className="font-bold mb-4 text-sm">Company</h5>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Branches</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="/" className="hover:text-primary transition-colors">About Us</a></li>
+                <li><a href="/#branches" className="hover:text-primary transition-colors">Branches</a></li>
+                <li><a href="/#faq" className="hover:text-primary transition-colors">FAQ</a></li>
+                <li><a href="tel:+919876543210" className="hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
               <h5 className="font-bold mb-4 text-sm">Legal</h5>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">KYC Compliance</a></li>
+                <li><a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+                <li><a href="/terms" className="hover:text-primary transition-colors">Terms of Service</a></li>
+                <li><a href="/kyc" className="hover:text-primary transition-colors">KYC Compliance</a></li>
               </ul>
             </div>
           </div>
