@@ -38,11 +38,11 @@ const reasons = [
 
 export default function WhyChoose() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-purple-500/3 to-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Why Choose DSM Gold Buyers?</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight">Why Choose DSM Gold Buyers?</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
             Trusted by thousands across Bangalore for integrity, transparency, and fair dealings
           </p>
         </div>
@@ -51,12 +51,12 @@ export default function WhyChoose() {
           {reasons.map((reason, idx) => {
             const Icon = reason.icon
             return (
-              <Card key={idx} className="p-6 bg-accent/30 border-accent hover:border-primary/50 hover:bg-accent/50 transition-all group">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary mb-4 group-hover:bg-primary/30 transition-colors">
-                  <Icon className="w-6 h-6" />
+              <Card key={idx} className="p-8 bg-gradient-to-br from-card/50 to-card/20 border border-purple-500/10 hover:border-purple-500/30 transition-all group rounded-2xl hover:shadow-xl hover:shadow-purple-500/10">
+                <div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500/30 to-pink-500/20 text-purple-400 mb-4 group-hover:from-purple-500/40 group-hover:to-pink-500/30 transition-all">
+                  <Icon className="w-7 h-7" />
                 </div>
                 
-                <h3 className="text-lg font-bold mb-2">{reason.title}</h3>
+                <h3 className="text-lg font-bold mb-3 group-hover:text-purple-300 transition-colors">{reason.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{reason.description}</p>
               </Card>
             )
@@ -64,10 +64,10 @@ export default function WhyChoose() {
         </div>
 
         {/* Trust metrics */}
-        <div className="bg-gradient-to-r from-primary/15 to-primary/5 rounded-2xl p-8 md:p-12 border border-primary/30">
+        <div className="bg-gradient-to-r from-orange-500/20 via-yellow-500/10 to-orange-500/5 rounded-2xl p-12 md:p-16 border border-orange-500/20 backdrop-blur-sm">
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="space-y-2">
-              <p className="text-4xl md:text-5xl font-bold text-primary">35+</p>
+            <div className="space-y-2 text-center">
+              <p className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">35+</p>
               <p className="text-muted-foreground">Branches across Bangalore</p>
             </div>
             <div className="space-y-2">

@@ -8,40 +8,47 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-accent/30">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-background/98 backdrop-blur-md border-b border-orange-500/20 shadow-lg shadow-orange-500/5">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/20">
-            <span className="text-xl font-bold text-primary">₹</span>
+        <div className="flex items-center gap-3 group">
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 group-hover:shadow-lg group-hover:shadow-orange-500/30 transition-all">
+            <span className="text-xl font-bold text-white">₹</span>
           </div>
-          <span className="font-bold text-lg hidden sm:inline">DSM Gold Buyers</span>
+          <div className="hidden sm:block">
+            <span className="font-bold text-lg text-foreground block">DSM Gold Buyers</span>
+            <span className="text-xs text-orange-400">Trusted Gold Buyer in Bangalore</span>
+          </div>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#services" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group">
             Services
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-orange-500 group-hover:w-full transition-all duration-300" />
           </a>
-          <a href="#branches" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/#branches" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group">
             Find Branch
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-orange-500 group-hover:w-full transition-all duration-300" />
           </a>
-          <a href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#process" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group">
             How It Works
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-orange-500 group-hover:w-full transition-all duration-300" />
           </a>
-          <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group">
             About
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-orange-500 group-hover:w-full transition-all duration-300" />
           </a>
         </div>
 
         {/* CTA Buttons */}
-        <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm" className="gap-2">
+        <div className="hidden md:flex items-center gap-4">
+          <a href="tel:+919876543210" className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-orange-400 transition-colors rounded-lg hover:bg-orange-500/10">
             <Phone className="w-4 h-4" />
-            <span className="text-xs">+91 9876543210</span>
-          </Button>
-          <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Sell Gold
+            <span>+91 9876543210</span>
+          </a>
+          <Button size="sm" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all">
+            Sell Gold Now
           </Button>
         </div>
 

@@ -32,11 +32,11 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent/20">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-blue-500/3 to-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">How It Works</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight">How It Works</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
             Simple, transparent process from evaluation to payment—just 4 easy steps
           </p>
         </div>
@@ -51,15 +51,14 @@ export default function HowItWorks() {
                   <div className="hidden lg:block absolute top-24 left-[60%] right-0 h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
                 )}
 
-                <Card className="p-6 bg-card border-accent hover:border-primary/50 transition-all h-full">
+                <Card className="p-8 bg-gradient-to-br from-card/50 to-card/20 border border-blue-500/10 hover:border-blue-500/30 transition-all h-full rounded-2xl group hover:shadow-xl hover:shadow-blue-500/10">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 flex-shrink-0">
-                      <div className="text-lg font-bold text-primary">{item.step}</div>
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-blue-500/30 to-cyan-500/20 flex-shrink-0 group-hover:from-blue-500/40 group-hover:to-cyan-500/30 transition-all">
+                      <div className="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">{item.step}</div>
                     </div>
-                    <Icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   </div>
                   
-                  <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-blue-300 transition-colors">{item.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                 </Card>
               </div>
