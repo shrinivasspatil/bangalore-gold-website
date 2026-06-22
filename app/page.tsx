@@ -1,6 +1,7 @@
 import Header from '@/components/header'
 import Hero from '@/components/hero'
 import Services from '@/components/services'
+import Testimonials from '@/components/testimonials'
 import AreaLocator from '@/components/area-locator'
 import HowItWorks from '@/components/how-it-works'
 import WhyChoose from '@/components/why-choose'
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="min-h-screen bg-background">
         <Hero />
         <Services />
+        <Testimonials />
         <AreaLocator />
         <AreasGrid />
         <HowItWorks />

@@ -59,25 +59,16 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right visual - Gold themed card */}
-          <div className="relative h-[500px] hidden lg:flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent to-background rounded-3xl" />
-            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center p-8 rounded-3xl border border-primary/20 bg-gradient-to-br from-accent/50 to-background/50 backdrop-blur-sm">
-              <div className="text-center space-y-6">
-                <div className="inline-flex h-20 w-20 items-center justify-center rounded-full bg-primary/20 ring-8 ring-primary/10">
-                  <div className="text-4xl">₹</div>
-                </div>
-                <h3 className="text-2xl font-bold">Live Gold Rate</h3>
-                <div className="text-5xl font-bold text-primary">₹7,350</div>
-                <p className="text-muted-foreground">per gram today</p>
-                <div className="pt-4 border-t border-accent/50">
-                  <p className="text-sm text-muted-foreground mb-4">Updated 2 minutes ago</p>
-                  <div className="flex items-center justify-center gap-2 text-primary">
-                    <MapPin className="w-4 h-4" />
-                    <span className="text-sm">Bangalore, KA</span>
-                  </div>
-                </div>
-              </div>
+          {/* Right visual - Woman with gold and cash */}
+          <div className="relative h-[550px] hidden lg:flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-yellow-500/5 to-transparent rounded-3xl" />
+            <div className="relative z-10 w-full h-full rounded-3xl border border-orange-500/20 bg-gradient-to-br from-accent/30 to-background/50 backdrop-blur-sm overflow-hidden flex items-center justify-center p-2">
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Jan%2014%2C%202026%2C%2004_38_05%20PM-qRhxiepXaMKqn3OWrw2ZbtqknLxKvF.png"
+                alt="Woman holding gold jewelry and cash - DSM Gold Buyers"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl pointer-events-none" />
             </div>
           </div>
         </div>

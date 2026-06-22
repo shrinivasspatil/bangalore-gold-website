@@ -12,7 +12,8 @@ const services = [
     features: ['Instant valuation', 'Live market rate', 'No hidden charges', 'Bank transfer'],
     color: 'from-red-500 to-red-600',
     bgColor: 'bg-red-500/20',
-    textColor: 'text-red-400'
+    textColor: 'text-red-400',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Jan%2014%2C%202026%2C%2004_38_05%20PM-qRhxiepXaMKqn3OWrw2ZbtqknLxKvF.png'
   },
   {
     icon: Link2,
@@ -21,7 +22,8 @@ const services = [
     features: ['Quick settlement', 'Zero hassle', 'Fair valuation', 'Instant payment'],
     color: 'from-cyan-400 to-cyan-500',
     bgColor: 'bg-cyan-500/20',
-    textColor: 'text-cyan-400'
+    textColor: 'text-cyan-400',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/c03033f4-9a4e-472d-8281-10727e57f4ae-MLRom15dw8T7rm1VgztaIYSHOPD5eV.jpeg'
   },
   {
     icon: Gift,
@@ -30,7 +32,8 @@ const services = [
     features: ['Certified purity', 'Competitive rates', 'Safe delivery', 'BIS certified'],
     color: 'from-yellow-400 to-yellow-500',
     bgColor: 'bg-yellow-500/20',
-    textColor: 'text-yellow-400'
+    textColor: 'text-yellow-400',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/79d8d5ee-4d57-4015-8e48-805a56fef64d-ztVKFgdDSXAaWHL4NJ8PLpZvBv5vyB.jpeg'
   },
   {
     icon: TrendingUp,
@@ -39,7 +42,8 @@ const services = [
     features: ['Same-day approval', 'Best rates', 'Minimal documentation', '24-hour support'],
     color: 'from-purple-500 to-purple-600',
     bgColor: 'bg-purple-500/20',
-    textColor: 'text-purple-400'
+    textColor: 'text-purple-400',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2send-1-PP1D6VXH1obMxCOGc0WWYz5wNWfWTK.png'
   }
 ]
 
@@ -58,28 +62,41 @@ export default function Services() {
           {services.map((service, idx) => {
             const Icon = service.icon
             return (
-              <Card key={idx} className="p-6 hover:border-2 transition-all group bg-gradient-to-br from-card to-card/50 border-2 hover:shadow-2xl hover:shadow-orange-500/20">
-                <div className="mb-4">
-                  <div className={`inline-flex h-14 w-14 items-center justify-center rounded-xl ${service.bgColor} ${service.textColor} group-hover:scale-110 transition-transform`}>
-                    <Icon className="w-7 h-7" />
-                  </div>
-                </div>
-                
-                <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-orange-400 via-yellow-400 to-red-400 bg-clip-text text-transparent">{service.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{service.description}</p>
-                
-                <div className="space-y-2 mb-6">
-                  {service.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className={`w-2 h-2 rounded-full ${service.textColor}`} />
-                      {feature}
-                    </div>
-                  ))}
+              <Card key={idx} className="overflow-hidden hover:border-2 transition-all group bg-gradient-to-br from-card to-card/50 border-2 hover:shadow-2xl hover:shadow-orange-500/20 flex flex-col h-full">
+                {/* Image */}
+                <div className="relative h-48 overflow-hidden bg-accent/50 group-hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
                 </div>
 
-                <Button className={`w-full bg-gradient-to-r ${service.color} text-white hover:opacity-90 transition-opacity`}>
-                  Learn More →
-                </Button>
+                {/* Content */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="mb-4">
+                    <div className={`inline-flex h-12 w-12 items-center justify-center rounded-lg ${service.bgColor} ${service.textColor}`}>
+                      <Icon className="w-6 h-6" />
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-lg font-bold mb-2 bg-gradient-to-r from-orange-400 via-yellow-400 to-red-400 bg-clip-text text-transparent">{service.title}</h3>
+                  <p className="text-muted-foreground text-xs mb-4 leading-relaxed line-clamp-3">{service.description}</p>
+                  
+                  <div className="space-y-1.5 mb-6 flex-grow">
+                    {service.features.slice(0, 3).map((feature, i) => (
+                      <div key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <div className={`w-1.5 h-1.5 rounded-full ${service.textColor}`} />
+                        {feature}
+                      </div>
+                    ))}
+                  </div>
+
+                  <Button className={`w-full bg-gradient-to-r ${service.color} text-white hover:opacity-90 transition-opacity text-sm`}>
+                    Learn More →
+                  </Button>
+                </div>
               </Card>
             )
           })}
