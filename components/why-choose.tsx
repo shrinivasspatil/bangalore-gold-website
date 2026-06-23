@@ -64,23 +64,23 @@ export default function WhyChoose() {
         </div>
 
         {/* Trust metrics */}
-        <div className="bg-gradient-to-r from-orange-500/20 via-yellow-500/10 to-orange-500/5 rounded-2xl p-12 md:p-16 border border-orange-500/20 backdrop-blur-sm">
-          <div className="grid md:grid-cols-4 gap-8">
+        <div className="bg-gradient-to-r from-orange-500/20 via-yellow-500/10 to-orange-500/5 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 border border-orange-500/20 backdrop-blur-sm overflow-hidden">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             <div className="space-y-2 text-center">
-              <p className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">35+</p>
-              <p className="text-muted-foreground">Branches across Bangalore</p>
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent break-words">35+</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Branches</p>
             </div>
-            <div className="space-y-2">
-              <p className="text-4xl md:text-5xl font-bold text-primary">10K+</p>
-              <p className="text-muted-foreground">Happy customers served</p>
+            <div className="space-y-2 text-center">
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-primary break-words">10K+</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Happy Customers</p>
             </div>
-            <div className="space-y-2">
-              <p className="text-4xl md:text-5xl font-bold text-primary">100%</p>
-              <p className="text-muted-foreground">Transparent pricing</p>
+            <div className="space-y-2 text-center">
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-primary break-words">100%</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Transparent</p>
             </div>
-            <div className="space-y-2">
-              <p className="text-4xl md:text-5xl font-bold text-primary">24/7</p>
-              <p className="text-muted-foreground">Customer support</p>
+            <div className="space-y-2 text-center">
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-primary break-words">24/7</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Support</p>
             </div>
           </div>
         </div>

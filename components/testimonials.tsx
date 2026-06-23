@@ -53,18 +53,18 @@ export default function Testimonials() {
         </div>
 
         {/* Stats bar */}
-        <div className="mt-16 grid grid-cols-3 gap-8 pt-12 border-t border-accent/30">
+        <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8 pt-12 border-t border-accent/30">
           <div className="text-center">
-            <div className="text-4xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent mb-2">10K+</div>
-            <p className="text-muted-foreground">Happy Customers</p>
+            <div className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent mb-2 break-words">10K+</div>
+            <p className="text-xs sm:text-sm text-muted-foreground">Happy Customers</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-2">₹50Cr+</div>
-            <p className="text-muted-foreground">Gold Traded</p>
+            <div className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-2 break-words">₹50Cr+</div>
+            <p className="text-xs sm:text-sm text-muted-foreground">Gold Traded</p>
           </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">4.9/5</div>
-            <p className="text-muted-foreground">Average Rating</p>
+          <div className="text-center col-span-2 sm:col-span-1">
+            <div className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2 break-words">4.9/5</div>
+            <p className="text-xs sm:text-sm text-muted-foreground">Average Rating</p>
           </div>
         </div>
       </div>

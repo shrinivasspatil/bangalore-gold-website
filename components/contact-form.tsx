@@ -78,7 +78,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
   }
 
   const formContent = (
-    <div className="space-y-6">
+    <div className="space-y-5">
       <div>
         <label className="block text-sm font-semibold text-foreground mb-2">
           Full Name *
@@ -89,7 +89,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
           value={formData.name}
           onChange={handleChange}
           placeholder="Enter your name"
-          className="w-full px-4 py-3 rounded-lg bg-accent border border-orange-500/20 focus:border-orange-500/50 focus:outline-none text-foreground placeholder:text-muted-foreground transition-all"
+          className="w-full px-4 py-3 rounded-xl bg-white border-2 border-orange-200 focus:border-orange-500 focus:outline-none text-foreground placeholder:text-muted-foreground transition-all text-base"
         />
       </div>
 
@@ -104,7 +104,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
           onChange={handleChange}
           placeholder="10-digit mobile number"
           maxLength={10}
-          className="w-full px-4 py-3 rounded-lg bg-accent border border-orange-500/20 focus:border-orange-500/50 focus:outline-none text-foreground placeholder:text-muted-foreground transition-all"
+          className="w-full px-4 py-3 rounded-xl bg-white border-2 border-orange-200 focus:border-orange-500 focus:outline-none text-foreground placeholder:text-muted-foreground transition-all text-base"
         />
       </div>
 
@@ -119,7 +119,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
           onChange={handleChange}
           placeholder="Postal code (optional)"
           maxLength={6}
-          className="w-full px-4 py-3 rounded-lg bg-accent border border-orange-500/20 focus:border-orange-500/50 focus:outline-none text-foreground placeholder:text-muted-foreground transition-all"
+          className="w-full px-4 py-3 rounded-xl bg-white border-2 border-orange-200 focus:border-orange-500 focus:outline-none text-foreground placeholder:text-muted-foreground transition-all text-base"
         />
       </div>
 
@@ -131,7 +131,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
           name="service"
           value={formData.service}
           onChange={handleChange}
-          className="w-full px-4 py-3 rounded-lg bg-accent border border-orange-500/20 focus:border-orange-500/50 focus:outline-none text-foreground transition-all"
+          className="w-full px-4 py-3 rounded-xl bg-white border-2 border-orange-200 focus:border-orange-500 focus:outline-none text-foreground transition-all text-base"
         >
           <option value="">Select Service</option>
           {services.map(service => (
@@ -141,16 +141,16 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
       </div>
 
       {submitStatus === 'success' && (
-        <div className="p-4 rounded-lg bg-green-500/20 border border-green-500/30">
-          <p className="text-sm text-green-400 font-medium">
+        <div className="p-4 rounded-xl bg-green-50 border-2 border-green-300">
+          <p className="text-sm text-green-700 font-medium">
             ✓ Thank you! We&apos;ll contact you shortly.
           </p>
         </div>
       )}
 
       {submitStatus === 'error' && (
-        <div className="p-4 rounded-lg bg-red-500/20 border border-red-500/30">
-          <p className="text-sm text-red-400 font-medium">
+        <div className="p-4 rounded-xl bg-red-50 border-2 border-red-300">
+          <p className="text-sm text-red-700 font-medium">
             Please fill all required fields correctly.
           </p>
         </div>
@@ -159,7 +159,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
       <Button
         onClick={handleSubmit}
         disabled={isSubmitting}
-        className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3 rounded-lg transition-all"
+        className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 hover:scale-105 disabled:hover:scale-100 text-base h-12"
       >
         {isSubmitting ? 'Submitting...' : 'Get Free Valuation'}
       </Button>
