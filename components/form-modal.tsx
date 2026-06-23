@@ -38,8 +38,8 @@ export default function FormModal() {
       />
 
       {/* Modal */}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] w-full mx-4 max-w-md sm:mx-0">
-        <div className="bg-white border-2 border-orange-200 rounded-2xl shadow-2xl shadow-orange-500/20 p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto">
+      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] w-[calc(100%-32px)] sm:w-full max-w-md">
+        <div className="bg-white border-2 border-orange-200 rounded-2xl shadow-2xl shadow-orange-500/20 p-4 sm:p-8 relative max-h-[90vh] overflow-y-auto">
           {/* Close Button */}
           <button
             onClick={handleClose}
@@ -49,11 +49,11 @@ export default function FormModal() {
           </button>
 
           {/* Header */}
-          <div className="mb-6 pr-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
+          <div className="mb-4 sm:mb-6 pr-8">
+            <h2 className="text-xl sm:text-3xl font-bold text-foreground mb-1 sm:mb-2">
               Get Free Gold Valuation
             </h2>
-            <p className="text-sm sm:text-base text-muted-foreground">
+            <p className="text-xs sm:text-base text-muted-foreground">
               Fill details below and our experts will contact you within 1 hour
             </p>
           </div>
