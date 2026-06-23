@@ -33,12 +33,12 @@ export default function FormModal() {
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity"
+        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[999] transition-opacity"
         onClick={handleClose}
       />
 
       {/* Modal */}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-full mx-4 max-w-md sm:mx-0">
+      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] w-full mx-4 max-w-md sm:mx-0">
         <div className="bg-white border-2 border-orange-200 rounded-2xl shadow-2xl shadow-orange-500/20 p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto">
           {/* Close Button */}
           <button
