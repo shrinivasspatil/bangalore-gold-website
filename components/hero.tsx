@@ -44,18 +44,18 @@ export default function Hero() {
             </div>
 
             {/* Quick stats */}
-            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-accent/30">
-              <div className="space-y-2">
-                <div className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">35+</div>
-                <p className="text-sm text-muted-foreground">Branches</p>
+            <div className="grid grid-cols-3 sm:grid-cols-3 gap-2 sm:gap-4 pt-8 border-t border-accent/30">
+              <div className="space-y-2 text-center">
+                <div className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent break-words">35+</div>
+                <p className="text-xs sm:text-sm text-muted-foreground">Branches</p>
               </div>
-              <div className="space-y-2">
-                <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Fair</div>
-                <p className="text-sm text-muted-foreground">Rates</p>
+              <div className="space-y-2 text-center">
+                <div className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent break-words">Fair</div>
+                <p className="text-xs sm:text-sm text-muted-foreground">Rates</p>
               </div>
-              <div className="space-y-2">
-                <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Instant</div>
-                <p className="text-sm text-muted-foreground">Payments</p>
+              <div className="space-y-2 text-center">
+                <div className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent break-words">Instant</div>
+                <p className="text-xs sm:text-sm text-muted-foreground">Payments</p>
               </div>
             </div>
           </div>
