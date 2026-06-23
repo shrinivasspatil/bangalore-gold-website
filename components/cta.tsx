@@ -65,10 +65,10 @@ export default function CTA() {
         </div>
 
         {/* Contact Form Section */}
-        <div className="mt-16 max-w-3xl mx-auto">
-          <div className="bg-gradient-to-br from-background to-accent/20 rounded-3xl p-12 border border-orange-500/20">
-            <h3 className="text-3xl font-bold mb-2 text-foreground">Get Free Gold Valuation</h3>
-            <p className="text-muted-foreground mb-8">Fill the form below and our gold experts will contact you within 1 hour with the best valuation for your gold.</p>
+        <div className="mt-16 max-w-3xl mx-auto px-4 sm:px-0">
+          <div className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl p-6 sm:p-12 border-2 border-orange-200">
+            <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-2 text-foreground">Get Free Gold Valuation</h3>
+            <p className="text-sm sm:text-base text-muted-foreground mb-8">Fill the form below and our gold experts will contact you within 1 hour with the best valuation for your gold.</p>
             <ContactForm variant="inline" />
           </div>
         </div>
