@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import FormModal from '@/components/form-modal'
 import './globals.css'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
@@ -39,8 +40,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'dark',
-  themeColor: '#d4a574',
+  colorScheme: 'light',
+  themeColor: '#f97316',
 }
 
 export default function RootLayout({
@@ -51,6 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} bg-background`}>
       <body className="font-sans antialiased bg-background text-foreground">
+        <FormModal />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
