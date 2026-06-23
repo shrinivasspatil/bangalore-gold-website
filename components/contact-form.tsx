@@ -5,21 +5,6 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Phone, Mail, MapPin } from 'lucide-react'
 
-const areas = [
-  'Indiranagar',
-  'Koramangala',
-  'Whitefield',
-  'MG Road',
-  'Jayanagar',
-  'Marathahalli',
-  'Banaswadi',
-  'Hebbal',
-  'Malleshwaram',
-  'Bannerghatta Road',
-  'Vijayanagar',
-  'Sarjapur'
-]
-
 const services = [
   'Sell Gold',
   'Release Pledged Gold',
@@ -36,7 +21,6 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    area: '',
     pin: '',
     service: ''
   })
@@ -56,7 +40,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
     e.preventDefault()
     
     // Validation
-    if (!formData.name || !formData.phone || !formData.area || !formData.service) {
+    if (!formData.name || !formData.phone || !formData.service) {
       setSubmitStatus('error')
       return
     }
@@ -74,7 +58,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
 
       if (response.ok) {
         setSubmitStatus('success')
-        setFormData({ name: '', phone: '', area: '', pin: '', service: '' })
+        setFormData({ name: '', phone: '', pin: '', service: '' })
         
         // Close popup after 2 seconds if it's a popup variant
         if (variant === 'popup' && onClose) {
@@ -124,38 +108,19 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <label className="block text-sm font-semibold text-foreground mb-2">
-            Area/Location *
-          </label>
-          <select
-            name="area"
-            value={formData.area}
-            onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg bg-accent border border-orange-500/20 focus:border-orange-500/50 focus:outline-none text-foreground transition-all"
-          >
-            <option value="">Select Area</option>
-            {areas.map(area => (
-              <option key={area} value={area}>{area}</option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label className="block text-sm font-semibold text-foreground mb-2">
-            PIN Code
-          </label>
-          <input
-            type="text"
-            name="pin"
-            value={formData.pin}
-            onChange={handleChange}
-            placeholder="Postal code"
-            maxLength={6}
-            className="w-full px-4 py-3 rounded-lg bg-accent border border-orange-500/20 focus:border-orange-500/50 focus:outline-none text-foreground placeholder:text-muted-foreground transition-all"
-          />
-        </div>
+      <div>
+        <label className="block text-sm font-semibold text-foreground mb-2">
+          PIN Code
+        </label>
+        <input
+          type="text"
+          name="pin"
+          value={formData.pin}
+          onChange={handleChange}
+          placeholder="Postal code (optional)"
+          maxLength={6}
+          className="w-full px-4 py-3 rounded-lg bg-accent border border-orange-500/20 focus:border-orange-500/50 focus:outline-none text-foreground placeholder:text-muted-foreground transition-all"
+        />
       </div>
 
       <div>

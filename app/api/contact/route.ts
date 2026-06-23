@@ -5,9 +5,9 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     
     // Validate required fields
-    const { name, phone, area, service } = body
+    const { name, phone, service } = body
     
-    if (!name || !phone || !area || !service) {
+    if (!name || !phone || !service) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -35,7 +35,6 @@ export async function POST(request: NextRequest) {
     console.log('[v0] New contact form submission:', {
       name,
       phone,
-      area,
       service,
       pin: body.pin || 'N/A',
       timestamp: new Date().toISOString()
@@ -50,7 +49,6 @@ export async function POST(request: NextRequest) {
     //     <h2>New Lead</h2>
     //     <p><strong>Name:</strong> ${name}</p>
     //     <p><strong>Phone:</strong> ${phone}</p>
-    //     <p><strong>Area:</strong> ${area}</p>
     //     <p><strong>Service:</strong> ${service}</p>
     //     <p><strong>PIN:</strong> ${body.pin || 'N/A'}</p>
     //   `
