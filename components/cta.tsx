@@ -2,6 +2,7 @@
 
 import { Phone, MapPin, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import ContactForm from '@/components/contact-form'
 
 export default function CTA() {
   return (
@@ -60,6 +61,15 @@ export default function CTA() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Contact Form Section */}
+        <div className="mt-16 max-w-3xl mx-auto">
+          <div className="bg-gradient-to-br from-background to-accent/20 rounded-3xl p-12 border border-orange-500/20">
+            <h3 className="text-3xl font-bold mb-2 text-foreground">Get Free Gold Valuation</h3>
+            <p className="text-muted-foreground mb-8">Fill the form below and our gold experts will contact you within 1 hour with the best valuation for your gold.</p>
+            <ContactForm variant="inline" />
           </div>
         </div>
 
