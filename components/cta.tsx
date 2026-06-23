@@ -8,37 +8,37 @@ export default function CTA() {
   return (
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-orange-500/5 to-background">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-gradient-to-br from-orange-600/40 via-orange-500/30 to-yellow-600/20 rounded-3xl p-12 md:p-16 border border-orange-500/40 overflow-hidden relative shadow-2xl shadow-orange-500/20">
+        <div className="bg-gradient-to-br from-orange-500/10 via-yellow-500/5 to-orange-500/5 rounded-3xl p-12 md:p-16 border border-orange-500/20 overflow-hidden relative shadow-lg shadow-orange-500/10">
           {/* Background accents */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/30 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-500/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-500/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
 
           <div className="relative z-10 max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tight">
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-foreground">
               Ready to Turn Your Gold Into Cash?
             </h2>
             
-            <p className="text-lg text-gray-200 leading-relaxed font-medium">
+            <p className="text-lg text-muted-foreground leading-relaxed font-medium">
               Join thousands of satisfied customers who have experienced fair valuations, transparent processes, and instant payments at DSM Gold Buyers.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 pt-8">
               {/* Contact option 1 */}
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:border-white/40 transition-all group">
-                <Phone className="w-10 h-10 text-yellow-300 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                <h4 className="font-bold mb-2 text-lg text-white">Call Us Now</h4>
-                <p className="text-sm text-gray-200 mb-4">Speak with our gold experts</p>
-                <a href="tel:+919876543210" className="text-yellow-300 font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all">
+              <div className="bg-gradient-to-br from-orange-50 to-yellow-50 backdrop-blur-sm border border-orange-200 rounded-2xl p-8 hover:border-orange-300 transition-all group">
+                <Phone className="w-10 h-10 text-orange-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <h4 className="font-bold mb-2 text-lg text-foreground">Call Us Now</h4>
+                <p className="text-sm text-muted-foreground mb-4">Speak with our gold experts</p>
+                <a href="tel:+919876543210" className="text-orange-600 font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all">
                   +91 9876 543 210 <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
 
               {/* Contact option 2 */}
-              <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:border-white/40 transition-all group">
-                <MapPin className="w-10 h-10 text-yellow-300 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-                <h4 className="font-bold mb-2 text-lg text-white">Visit Our Branch</h4>
-                <p className="text-sm text-gray-200 mb-4">Walk-in with your gold anytime</p>
-                <button className="text-yellow-300 font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all mx-auto">
+              <div className="bg-gradient-to-br from-orange-50 to-yellow-50 backdrop-blur-sm border border-orange-200 rounded-2xl p-8 hover:border-orange-300 transition-all group">
+                <MapPin className="w-10 h-10 text-orange-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                <h4 className="font-bold mb-2 text-lg text-foreground">Visit Our Branch</h4>
+                <p className="text-sm text-muted-foreground mb-4">Walk-in with your gold anytime</p>
+                <button className="text-orange-600 font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all mx-auto">
                   Find Branch <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
@@ -52,10 +52,10 @@ export default function CTA() {
                 </div>
                 
                 <div className="flex flex-wrap justify-center gap-4">
-                  <Button size="lg" className="bg-white hover:bg-gray-100 text-orange-600 font-bold rounded-xl shadow-lg shadow-white/20 h-14 px-8 transition-all hover:scale-105">
+                  <Button size="lg" className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold rounded-xl shadow-lg shadow-orange-500/30 h-14 px-8 transition-all hover:scale-105">
                     Sell Gold Now
                   </Button>
-                  <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white border border-white/30 font-bold rounded-xl h-14 px-8 transition-all backdrop-blur-sm">
+                  <Button size="lg" className="bg-slate-200 hover:bg-slate-300 text-slate-800 border border-slate-300 font-bold rounded-xl h-14 px-8 transition-all">
                     Book Appointment
                   </Button>
                 </div>

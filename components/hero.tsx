@@ -38,7 +38,7 @@ export default function Hero() {
               <Button size="lg" className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-bold shadow-xl shadow-orange-500/40 hover:shadow-orange-500/60 transition-all scale-100 hover:scale-105 h-14 text-base">
                 Sell Gold Now
               </Button>
-              <Button size="lg" className="bg-slate-700 hover:bg-slate-800 text-white rounded-xl font-bold border border-slate-600 hover:border-slate-500 h-14 text-base transition-all">
+              <Button size="lg" className="bg-slate-800 hover:bg-slate-900 text-white rounded-xl font-bold border border-slate-700 hover:border-slate-600 h-14 text-base transition-all">
                 Find Your Branch
               </Button>
             </div>
@@ -69,7 +69,7 @@ export default function Hero() {
                 alt="Woman holding gold jewelry and cash - DSM Gold Buyers"
                 className="w-full h-full object-cover rounded-2xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent rounded-2xl pointer-events-none" />
             </div>
           </div>
         </div>
