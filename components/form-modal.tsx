@@ -60,13 +60,6 @@ export default function FormModal() {
 
           {/* Form */}
           <ContactForm onClose={handleClose} variant="popup" />
-
-          {/* Footer Info */}
-          <div className="mt-6 pt-6 border-t border-orange-200">
-            <p className="text-xs text-muted-foreground text-center">
-              We respect your privacy. Your information is secure and will only be used to contact you.
-            </p>
-          </div>
         </div>
       </div>
     </>
