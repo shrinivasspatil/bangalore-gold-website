@@ -78,9 +78,9 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
   }
 
   const formContent = (
-    <div className="space-y-5">
+    <div className="space-y-3 sm:space-y-5">
       <div>
-        <label className="block text-sm font-semibold text-foreground mb-2">
+        <label className="block text-sm font-semibold text-foreground mb-1 sm:mb-2">
           Full Name *
         </label>
         <input
@@ -94,7 +94,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-foreground mb-2">
+        <label className="block text-sm font-semibold text-foreground mb-1 sm:mb-2">
           Phone Number *
         </label>
         <input
@@ -109,7 +109,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-foreground mb-2">
+        <label className="block text-sm font-semibold text-foreground mb-1 sm:mb-2">
           PIN Code
         </label>
         <input
@@ -124,7 +124,7 @@ export default function ContactForm({ onClose, variant = 'popup' }: ContactFormP
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-foreground mb-2">
+        <label className="block text-sm font-semibold text-foreground mb-1 sm:mb-2">
           Service You Need *
         </label>
         <select
