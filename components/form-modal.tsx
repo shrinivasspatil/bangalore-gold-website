@@ -38,7 +38,7 @@ export default function FormModal() {
       />
 
       {/* Modal */}
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] w-full mx-4 max-w-md sm:mx-0">
+      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] w-[calc(100%-32px)] sm:w-full max-w-md">
         <div className="bg-white border-2 border-orange-200 rounded-2xl shadow-2xl shadow-orange-500/20 p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto">
           {/* Close Button */}
           <button
