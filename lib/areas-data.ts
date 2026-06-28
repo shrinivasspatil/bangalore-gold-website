@@ -21,7 +21,7 @@ export const areasData: Area[] = [
   {
     slug: 'indiranagar',
     area: 'Indiranagar',
-    phone: '+91 98765 43210',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 3,
     address: '100 Feet Road, Indiranagar, Bangalore 560038',
@@ -58,7 +58,7 @@ export const areasData: Area[] = [
   {
     slug: 'koramangala',
     area: 'Koramangala',
-    phone: '+91 98765 43211',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 2,
     address: '5th Block, Koramangala, Bangalore 560034',
@@ -95,7 +95,7 @@ export const areasData: Area[] = [
   {
     slug: 'whitefield',
     area: 'Whitefield',
-    phone: '+91 98765 43212',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 4,
     address: 'Whitefield Main Road, Bangalore 560066',
@@ -132,7 +132,7 @@ export const areasData: Area[] = [
   {
     slug: 'mg-road',
     area: 'MG Road',
-    phone: '+91 98765 43213',
+    phone: '+91 8883288847',
     time: '10:00 AM - 9:00 PM',
     branches: 2,
     address: 'Brigade Road, MG Road, Bangalore 560001',
@@ -169,7 +169,7 @@ export const areasData: Area[] = [
   {
     slug: 'jayanagar',
     area: 'Jayanagar',
-    phone: '+91 98765 43214',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 2,
     address: '4th Block, Jayanagar, Bangalore 560041',
@@ -206,7 +206,7 @@ export const areasData: Area[] = [
   {
     slug: 'marathahalli',
     area: 'Marathahalli',
-    phone: '+91 98765 43215',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 3,
     address: 'Marathahalli Bridge, Bangalore 560037',
@@ -243,7 +243,7 @@ export const areasData: Area[] = [
   {
     slug: 'banaswadi',
     area: 'Banaswadi',
-    phone: '+91 98765 43216',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 2,
     address: 'Banaswadi Main Road, Bangalore 560033',
@@ -280,7 +280,7 @@ export const areasData: Area[] = [
   {
     slug: 'hebbal',
     area: 'Hebbal',
-    phone: '+91 98765 43217',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 2,
     address: 'Hebbal Market, Bangalore 560024',
@@ -317,7 +317,7 @@ export const areasData: Area[] = [
   {
     slug: 'malleshwaram',
     area: 'Malleshwaram',
-    phone: '+91 98765 43218',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 2,
     address: 'Malleshwaram High Street, Bangalore 560003',
@@ -354,7 +354,7 @@ export const areasData: Area[] = [
   {
     slug: 'bannerghatta-road',
     area: 'Bannerghatta Road',
-    phone: '+91 98765 43219',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 3,
     address: 'Bannerghatta Road, Bangalore 560076',
@@ -391,7 +391,7 @@ export const areasData: Area[] = [
   {
     slug: 'vijayanagar',
     area: 'Vijayanagar',
-    phone: '+91 98765 43220',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 2,
     address: 'Vijayanagar Main Road, Bangalore 560040',
@@ -428,7 +428,7 @@ export const areasData: Area[] = [
   {
     slug: 'sarjapur',
     area: 'Sarjapur',
-    phone: '+91 98765 43221',
+    phone: '+91 8883288847',
     time: '10:00 AM - 8:00 PM',
     branches: 2,
     address: 'Sarjapur Main Road, Bangalore 560087',

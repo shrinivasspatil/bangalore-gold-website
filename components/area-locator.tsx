@@ -6,18 +6,18 @@ import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
 const areas = [
-  { area: 'Indiranagar', branches: 2, time: '10 AM - 7 PM', phone: '+91 9876543210' },
-  { area: 'Koramangala', branches: 2, time: '10 AM - 7 PM', phone: '+91 9876543211' },
-  { area: 'Whitefield', branches: 1, time: '10 AM - 7 PM', phone: '+91 9876543212' },
-  { area: 'MG Road', branches: 3, time: '10 AM - 7:30 PM', phone: '+91 9876543213' },
-  { area: 'Jayanagar', branches: 2, time: '10 AM - 7 PM', phone: '+91 9876543214' },
-  { area: 'Banashankari', branches: 1, time: '10 AM - 7 PM', phone: '+91 9876543215' },
-  { area: 'JP Nagar', branches: 2, time: '10 AM - 7 PM', phone: '+91 9876543216' },
-  { area: 'Yelahanka', branches: 1, time: '10 AM - 7 PM', phone: '+91 9876543217' },
-  { area: 'Marathahalli', branches: 2, time: '10 AM - 7 PM', phone: '+91 9876543218' },
-  { area: 'Yeshwanthpur', branches: 1, time: '10 AM - 7 PM', phone: '+91 9876543219' },
-  { area: 'Malleswaram', branches: 2, time: '10 AM - 7 PM', phone: '+91 9876543220' },
-  { area: 'Eshwari Nagar', branches: 1, time: '10 AM - 7 PM', phone: '+91 9876543221' },
+  { area: 'Indiranagar', branches: 2, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'Koramangala', branches: 2, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'Whitefield', branches: 1, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'MG Road', branches: 3, time: '10 AM - 7:30 PM', phone: '+91 8883288847' },
+  { area: 'Jayanagar', branches: 2, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'Banashankari', branches: 1, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'JP Nagar', branches: 2, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'Yelahanka', branches: 1, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'Marathahalli', branches: 2, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'Yeshwanthpur', branches: 1, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'Malleswaram', branches: 2, time: '10 AM - 7 PM', phone: '+91 8883288847' },
+  { area: 'Eshwari Nagar', branches: 1, time: '10 AM - 7 PM', phone: '+91 8883288847' },
 ]
 
 export default function AreaLocator() {

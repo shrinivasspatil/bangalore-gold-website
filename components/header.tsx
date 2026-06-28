@@ -43,9 +43,9 @@ export default function Header() {
 
         {/* CTA Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="tel:+919876543210" className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-orange-400 transition-colors rounded-lg hover:bg-orange-500/10">
+          <a href="tel:+918883288847" className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-orange-400 transition-colors rounded-lg hover:bg-orange-500/10">
             <Phone className="w-4 h-4" />
-            <span>+91 9876543210</span>
+            <span>+91 8883288847</span>
           </a>
           <Button size="sm" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all">
             Sell Gold Now

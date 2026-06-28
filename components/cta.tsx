@@ -28,8 +28,8 @@ export default function CTA() {
                 <Phone className="w-10 h-10 text-orange-600 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                 <h4 className="font-bold mb-2 text-lg text-foreground">Call Us Now</h4>
                 <p className="text-sm text-muted-foreground mb-4">Speak with our gold experts</p>
-                <a href="tel:+919876543210" className="text-orange-600 font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all">
-                  +91 9876 543 210 <ArrowRight className="w-4 h-4" />
+                <a href="tel:+918883288847" className="text-orange-600 font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all">
+                  +91 8883288847 <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
 
@@ -95,7 +95,7 @@ export default function CTA() {
                 <li><a href="/" className="hover:text-primary transition-colors">About Us</a></li>
                 <li><a href="/#branches" className="hover:text-primary transition-colors">Branches</a></li>
                 <li><a href="/#faq" className="hover:text-primary transition-colors">FAQ</a></li>
-                <li><a href="tel:+919876543210" className="hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="tel:+918883288847" className="hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
