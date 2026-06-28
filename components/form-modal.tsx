@@ -23,6 +23,16 @@ export default function FormModal() {
     }
   }, [])
 
+  // Listen for event to open modal
+  useEffect(() => {
+    const handleOpenModal = () => {
+      setIsOpen(true)
+    }
+
+    window.addEventListener('openContactModal', handleOpenModal)
+    return () => window.removeEventListener('openContactModal', handleOpenModal)
+  }, [])
+
   const handleClose = () => {
     setIsOpen(false)
   }
