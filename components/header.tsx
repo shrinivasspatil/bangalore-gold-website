@@ -7,6 +7,10 @@ import { Button } from '@/components/ui/button'
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleSellGoldClick = () => {
+    window.dispatchEvent(new Event('openContactModal'))
+  }
+
   return (
     <header className="sticky top-0 z-50 bg-background/98 backdrop-blur-md border-b border-orange-500/20 shadow-lg shadow-orange-500/5">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex items-center justify-between">
@@ -47,7 +51,7 @@ export default function Header() {
             <Phone className="w-4 h-4" />
             <span>+91 8883288847</span>
           </a>
-          <Button size="sm" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all">
+          <Button size="sm" onClick={handleSellGoldClick} className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all">
             Sell Gold Now
           </Button>
         </div>
@@ -82,8 +86,8 @@ export default function Header() {
                 <Phone className="w-4 h-4 mr-2" />
                 Call Us
               </Button>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                Sell Gold
+              <Button onClick={handleSellGoldClick} className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white">
+                Sell Gold Now
               </Button>
             </div>
           </div>
