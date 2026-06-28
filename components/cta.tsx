@@ -109,7 +109,7 @@ export default function CTA() {
           </div>
 
           <div className="border-t border-accent/30 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 DSM Gold Buyers. All rights reserved. | Serving Bangalore with transparency and integrity</p>
+            <p>&copy; 2026 DSM Gold Buyers. All rights reserved. | Serving Bangalore with transparency and integrity</p>
           </div>
         </footer>
       </div>
